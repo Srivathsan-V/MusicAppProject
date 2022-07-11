@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.text-center{
+  background-color: rgba(0, 47, 78, 0.671);
+  background-position-x: fit-content;
+  background-position-y: fit-content;
+  text-align: center;
+  text-decoration-line: underline;
+  text-shadow: 0 0 3px #d1d1d1, 0 0 5px #636363;
+
+
+}
+
+.bimg{
+  width: screen;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.row{
+  position: relative;
+  width:auto;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+}
+
+#order-table{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.navbar-brand{
+  color: aquamarine;
+}
+.navtitle{
+  color:white;
+  text-shadow: 2px 1px burlywood;
+  text-emphasis-color: grey;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+#addsongs{
+  margin-left: 1220px;
+  margin-bottom: 10px;
+}

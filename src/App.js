@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import ViewSongsComponent from './Components/ViewSongsComponent';
+import ViewArtistsComponent from './Components/ViewArtistsComponent';
+import {BrowserRouter, Route,Routes} from 'react-router-dom';
+import AddSongsComponent from './Components/AddSongsComponent';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>      
+      <Routes>
+      <Route exact path='/songs' element={<ViewSongsComponent/>}></Route>
+
+        <Route exact path='/artists' element={<ViewArtistsComponent/>}></Route>
+        <Route exact path='/addsongs' element={<AddSongsComponent/>}></Route>
+
+      </Routes>
+      </BrowserRouter>
+
   );
 }
 
