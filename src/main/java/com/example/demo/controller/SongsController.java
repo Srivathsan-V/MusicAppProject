@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.DTO.SongsDto;
 import com.example.demo.entity.Songs;
 import com.example.demo.repository.SongsRepository;
 import com.example.demo.service.SongsService;
@@ -30,8 +31,10 @@ public class SongsController {
 	
 	//get all songs
 	@GetMapping("/viewsongs")
-	public List<Songs> getAllSongs(){
-		return songsservice.findAllOrderByAvg_ratingDesc();
+	public List<SongsDto> getAllSongs(){
+		//return songsservice.findAllOrderByAvg_ratingDesc();
+		return songsservice.getAllsongswithArtists();
+		
 	}
 	
 	@PostMapping("/addsongs")

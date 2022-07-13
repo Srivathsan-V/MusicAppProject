@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Songs;
 
 public interface SongsRepository extends JpaRepository<Songs, String>{
-    @Query(nativeQuery = true, value = "Select * from Songs Order by avg_rating DESC limit 10")
+    @Query(nativeQuery = true, value = "Select * from Songs Order by avg_rating DESC limit 10 ")
    public List<Songs> findAllOrderByAvg_ratingDesc();
    public Songs findBysongname(String songname);
 
